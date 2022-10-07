@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.center-div{
+    padding-top: 10%;
+    height: 100vh;
+    background: rgb(73,69,156);
+    background: linear-gradient(90deg, rgba(73,69,156,1) 0%, rgba(102,51,153,1) 46%);
+}
+
+
+.btn{
+    border-radius: 55px !important;
+    align-self: center;
+    padding: 10px 35px !important;
+    background-color: #5f3799 !important;
+    border: none !important;
+    color: white;
+}
+
+form{
+    padding: 0 2em;
+}
+
+#sp1{
+    font-size: .8em !important;
+}
+.card{
+    border-radius: 55px !important;
+}
+img{
+    border-radius: 30px 30px 0 0;
+}
+.card-home{
+    border-radius: 30px !important;
+}
+.card-home:hover{
+    transform: scale(1.1);
+    /* transition-delay: 0.3s; */
+    transition: .8s;
+}
+h3{
+    text-align: center;
+    font-size: 2em;
+}
+
+input{
+    border-radius: 50px !important; 
+    padding: 10px 20px !important ;  
+    font-size: large !important;
+    margin: 5px 0 !important;
+}
+
+
+nav{
+    color: white !important;
+    /* background-color: #8e6cc1 !important; */
+    background: linear-gradient(90deg, rgba(73,69,156,1) 0%, rgba(102,51,153,1) 46%);
+    padding-left: 50px !important;
+    /* border: 3px solid red; */
+}
+nav a{
+    color:white !important;
+
+}
+
+
+
+/* Table */
+th,td{
+    padding: 15px 30px !important ;
+    overflow:hidden;
+}
+th{
+    color: white !important;
+}

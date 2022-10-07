@@ -1,0 +1,36 @@
+<%- include('header') -%>
+
+    <%
+        if(locals.session){
+            
+        }
+    %>
+
+    <div class=" center-div ">
+        <div class="container card shadow w-25 border py-5">
+            <div class="title pb-3 text-center">
+                <h2 class="font-weight-bold">Login System</h2>
+                <span id="sp1">Log in for the the existing user</span>
+            </div>
+            <form action="/login" method="POST" class="m-0 pt-0 pb-0">
+                <div class="form-group mb-4">
+                    <input placeholder="email" type="email" name="email" required="false" id="email" class="shadow form-control">
+                    <!-- <small class=" form-text text-muted text-right " >Register email address</small> -->
+                </div>
+                <div class="form-group ">
+                    <input type="password" name="password" id="password" class="form-control shadow" placeholder="password">
+                    <!-- <small class=" form-text text-muted text-right " id="passId">Register email address</small> -->
+                </div>
+                <%
+                    if(locals.ero){ %>
+                       <div class="form-group alert alert-danger d-flex justify-content-center align-items-center mt-3" style="height: 40px; padding:0; " role="alert">Invalid Email or Password</div> 
+                    <% }
+                 %>
+                <div class="form-group text-center mt-3"  >
+                    <button type="submit" class="btn btn-success shadow">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<%- include('footer') -%>
